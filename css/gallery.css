@@ -1,0 +1,630 @@
+/* =========================
+   إعدادات عامة
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    text-align: right;
+
+    font-family: Tahoma, Arial, sans-serif;
+
+    background-color: #f5f7fa;
+    color: #222;
+}
+
+
+a {
+    text-decoration:none;
+}
+
+
+a:hover {
+    text-decoration: none;
+}
+
+
+
+/* =========================
+   Navbar
+========================= */
+
+.main-navbar {
+    background-color: #101c2c;
+    padding: 12px 0;
+}
+
+
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+
+.navbar-brand i {
+    color: #00bcd4;
+    margin-left: 7px;
+}
+
+
+.navbar-nav {
+    margin-right: auto;
+    margin-left: 0 !important;
+}
+
+
+.navbar-nav .nav-item {
+    margin: 0 5px;
+}
+
+
+.navbar-nav .nav-link {
+    color: #e8edf3 !important;
+
+    padding: 8px 13px !important;
+
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .active .nav-link {
+
+    background-color: #00a8c6;
+
+    color: white !important;
+}
+
+
+
+/* =========================
+   رأس صفحة المعرض
+========================= */
+
+.gallery-header {
+
+    background-color: #14334b;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+
+.header-icon {
+
+    font-size: 55px;
+
+    color: #39d5e5;
+
+    margin-bottom: 15px;
+}
+
+
+.gallery-header h1 {
+
+    font-size: 40px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+
+.gallery-header p {
+
+    max-width: 700px;
+
+    margin: auto;
+
+    line-height: 1.9;
+
+    color: #dbe7ee;
+}
+
+
+
+/* =========================
+   أزرار التصفية
+========================= */
+
+.filter-section {
+
+    padding: 50px 0 20px;
+
+    text-align: center;
+}
+
+
+.filter-section h2 {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #17314a;
+
+    margin-bottom: 25px;
+}
+
+
+.filter-buttons {
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+
+.filter-btn {
+
+    border: none;
+
+    background-color: #e3eaee;
+
+    color: #243b4d;
+
+    padding: 10px 20px;
+
+    border-radius: 40px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.filter-btn:hover,
+.filter-btn.active {
+
+    background-color: #009db7;
+
+    color: white;
+}
+
+
+
+/* =========================
+   معرض الصور
+========================= */
+
+.gallery-section {
+
+    padding: 40px 0 70px;
+}
+
+
+.gallery-card {
+
+    height: 100%;
+
+    background-color: white;
+
+    border-radius: 9px;
+
+    overflow: hidden;
+
+    box-shadow: 0 5px 18px
+                rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.gallery-card:hover {
+
+    transform: translateY(-6px);
+}
+
+
+.gallery-image {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+
+.gallery-card:hover .gallery-image {
+
+    transform: scale(1.05);
+}
+
+
+.gallery-info {
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+.gallery-info i {
+
+    font-size: 27px;
+
+    color: #009db7;
+
+    margin-bottom: 10px;
+}
+
+
+.gallery-info h3 {
+
+    font-size: 21px;
+
+    color: #17314a;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.gallery-info p {
+
+    color: #687582;
+
+    line-height: 1.8;
+
+    margin: 0;
+}
+
+
+
+/* =========================
+   قسم الفيديو
+========================= */
+
+.videos-section {
+
+    background-color: #eaf0f4;
+
+    padding: 70px 0;
+}
+
+
+.section-title {
+
+    text-align: center;
+
+    margin-bottom: 40px;
+}
+
+
+.section-title > i {
+
+    font-size: 40px;
+
+    color: #009db7;
+
+    margin-bottom: 12px;
+}
+
+
+.section-title h2 {
+
+    font-size: 30px;
+
+    font-weight: bold;
+
+    color: #17314a;
+}
+
+
+.section-title p {
+
+    color: #667482;
+}
+
+
+.video-card {
+
+    overflow: hidden;
+
+    background-color: white;
+
+    border-radius: 9px;
+
+    box-shadow: 0 5px 18px
+                rgba(0, 0, 0, 0.08);
+}
+
+
+.video-card video {
+
+    width: 100%;
+
+    height: 300px;
+
+    display:block;
+
+    background-color: #111;
+
+    object-fit: cover;
+}
+
+
+.video-info {
+
+    padding: 20px;
+}
+
+
+.video-info h3 {
+
+    font-size: 21px;
+
+    font-weight: bold;
+
+    color: #17314a;
+}
+
+
+.video-info h3 i {
+
+    color: #009db7;
+
+    margin-left: 6px;
+}
+
+
+.video-info p {
+
+    color: #687582;
+
+    margin-bottom: 0;
+}
+
+
+
+/* =========================
+   نافذة تكبير الصورة
+========================= */
+
+.image-modal {
+
+    display: none;
+
+    position: fixed;
+
+    z-index: 2000;
+
+    left: 0;
+    top: 0;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: auto;
+
+    background-color: rgba(0, 0, 0, 0.9);
+
+    text-align: center;
+
+    padding-top: 50px;
+}
+
+
+.modal-image {
+
+    max-width: 80%;
+
+    max-height: 75vh;
+
+    border-radius: 5px;
+}
+
+
+.close-modal {
+
+    position: absolute;
+
+    top: 15px;
+
+    right: 30px;
+
+    color: white;
+
+    font-size: 45px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+
+#modalCaption {
+
+    color: white;
+
+    margin-top: 15px;
+
+    font-size: 18px;
+}
+
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+
+    background-color: #0e1b2a;
+
+    color: white;
+
+    padding: 45px 0 20px;
+}
+
+
+.footer-content {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+
+.footer-content h3 {
+
+    font-weight: bold;
+}
+
+
+.footer-content h3 i {
+
+    color: #00bcd4;
+
+    margin-left: 5px;
+}
+
+
+.footer-content p {
+
+    color: #aebbc7;
+}
+
+
+.footer-links {
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+.footer-links a {
+
+    color: #d4dde5;
+
+    margin-bottom: 8px;
+}
+
+
+.footer-links a:hover {
+
+    color: #2cd9e7;
+}
+
+
+footer hr {
+
+    border-color: rgba(255, 255, 255, 0.12);
+}
+
+
+.copyright {
+
+    text-align: center;
+
+    color: #9ba9b7;
+
+    margin: 0;
+}
+
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 768px) {
+
+
+    .gallery-header h1 {
+
+        font-size: 32px;
+    }
+
+
+    .gallery-image {
+
+        height: 220px;
+    }
+
+
+    .video-card video {
+
+        height: 250px;
+    }
+
+
+    .footer-content {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        align-items: center;
+    }
+
+
+    .footer-links {
+
+        align-items: center;
+    }
+
+
+    .modal-image {
+
+        max-width: 95%;
+    }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+
+    .gallery-header {
+
+        padding: 50px 15px;
+    }
+
+
+    .gallery-header h1 {
+
+        font-size: 27px;
+    }
+
+
+    .filter-btn {
+
+        padding: 8px 13px;
+
+        font-size: 14px;
+    }
+
+
+    .video-card video {
+
+        height: 210px;
+    }
+
+}

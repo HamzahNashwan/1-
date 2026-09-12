@@ -1,0 +1,371 @@
+/* =========================
+   الإعدادات العامة
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    background-color: #f4f6f8;
+
+    color: #222;
+
+    line-height: 1.8;
+
+    direction: rtl;
+}
+
+
+/* =========================
+   شريط التنقل
+========================= */
+
+.header {
+    background-color: #111827;
+
+    color: white;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 20px 7%;
+}
+
+
+.logo {
+    font-size: 25px;
+
+    font-weight: bold;
+}
+
+
+nav {
+    display: flex;
+
+    gap: 25px;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+
+nav a:hover,
+nav a.active {  
+    color: #38bdf8;
+}
+
+
+/* =========================
+   عنوان الصفحة
+========================= */
+
+.page-title {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background-color: white;
+}
+
+
+.page-title h1 {
+    font-size: 38px;
+
+    margin-bottom: 10px;
+}
+
+
+.page-title p {
+    color: #666;
+}
+
+
+/* =========================
+   قسم المقالات
+========================= */
+
+.articles-container {
+    width: 85%;
+
+    max-width: 1200px;
+
+    margin: 60px auto;
+}
+
+
+.section-title {
+    text-align: center;
+
+    font-size: 32px;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   CSS Grid
+========================= */
+
+.articles-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 30px;
+}
+
+
+/* =========================
+   بطاقة المقال
+========================= */
+
+.article-card {
+
+    background-color: white;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.08);
+
+    transition: 0.3s;
+}
+
+
+.article-card:hover {
+
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+
+/* صورة المقال */
+
+.article-card img {
+
+    width: 100%;
+
+    height: 200px;
+
+    object-fit: cover;
+}
+
+
+/* محتوى المقال */
+
+.article-content {
+
+    padding: 22px;
+
+    text-align: right;
+}
+
+
+.article-content h2 {
+
+    font-size: 23px;
+
+    margin-bottom: 12px;
+}
+
+
+.article-content p {
+
+    color: #555;
+
+    margin-bottom: 10px;
+}
+
+
+/* النص المخفي */
+
+.more-text {
+
+    display: none;
+
+    color: #444;
+}
+
+
+/* =========================
+   زر اقرأ المقال
+========================= */
+
+.read-more {
+
+    margin-top: 10px;
+
+    padding: 10px 20px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background-color: #0284c7;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+.read-more:hover {
+
+    background-color: #0369a1;
+}
+
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+
+    text-align: center;
+
+    background-color: #111827;
+
+    color: white;
+
+    padding: 25px;
+
+    margin-top: 60px;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 900px) {
+
+    .articles-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+
+    nav {
+
+        gap: 12px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+    }
+
+
+    .page-title h1 {
+
+        font-size: 30px;
+
+    }
+
+
+    .articles-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+}
+/* =========================
+   WOWSlider
+========================= */
+
+.slider-section {
+    width: 90%;
+    max-width: 1100px;
+    margin: 30px auto 50px;
+    text-align: center;
+}
+
+.slider-section .section-title {
+    margin-bottom: 20px;
+}
+
+
+/* حاوية السلايدر */
+
+#wowslider-container1 {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+
+/* الروابط داخل السلايدر */
+
+#wowslider-container1 .ws_images a {
+    text-decoration: none;
+}
+
+
+/* الصور */
+
+#wowslider-container1 .ws_images img {
+    cursor: pointer;
+}
+
+
+/* عند الضغط على الصورة */
+
+#wowslider-container1 .ws_images a:focus {
+    outline: none;
+}
+
+
+/* المقال الذي ننتقل إليه */
+
+.article-card {
+    scroll-margin-top: 100px;
+}
+
+
+/* حركة بسيطة عند الوصول للمقال */
+
+.article-card:target {
+    scroll-margin-top: 100px;
+}

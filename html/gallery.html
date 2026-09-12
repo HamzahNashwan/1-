@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>عالم التقنية | المعرض</title>
+
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+          href="../bootstrap/css/bootstrap.min.css">
+
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="../fontawesome/css/all.min.css">
+
+
+    <!-- CSS الخاص بصفحة المعرض -->
+    <link rel="stylesheet"
+          href="../css/gallery.css">
+
+</head>
+
+
+<body>
+
+
+<!-- ==============================
+     شريط التنقل
+================================ -->
+
+<nav class="navbar navbar-expand-lg navbar-dark main-navbar">
+
+    <div class="container">
+
+        <a class="navbar-brand"
+           href="../index.html">
+
+            <i class="fa-solid fa-microchip"></i>
+
+            عالم التقنية
+
+        </a>
+
+
+        <!-- زر القائمة للهاتف -->
+
+        <button class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#mainMenu"
+                aria-controls="mainMenu"
+                aria-expanded="false"
+                aria-label="فتح القائمة">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <div class="collapse navbar-collapse"
+             id="mainMenu">
+
+            <ul class="navbar-nav mr-auto">
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="../index.html">
+
+                        الرئيسية
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="news.html">
+
+                        الأخبار
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="articles.html">
+
+                        المقالات
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item active">
+
+                    <a class="nav-link"
+                       href="gallery.html">
+
+                        المعرض
+
+                    </a>
+
+                </li>
+
+
+                <li class="nav-item">
+
+                    <a class="nav-link"
+                       href="contact.html">
+
+                        تواصل معنا
+
+                    </a>
+
+                </li>
+
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- ==============================
+     عنوان الصفحة
+================================ -->
+
+<header class="gallery-header">
+
+    <div class="container">
+
+        <i class="fa-solid fa-photo-film header-icon"></i>
+
+        <h1>
+            معرض التقنية
+        </h1>
+
+        <p>
+            مجموعة من الصور ومقاطع الفيديو
+            المتعلقة بالتكنولوجيا والبرمجة
+            والذكاء الاصطناعي.
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==============================
+     أزرار التصفية
+================================ -->
+
+<section class="filter-section">
+
+    <div class="container">
+
+        <h2>
+            تصفح المعرض
+        </h2>
+
+
+        <div class="filter-buttons">
+
+            <button class="filter-btn active"
+                    data-filter="all">
+
+                الكل
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="ai">
+
+                الذكاء الاصطناعي
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="programming">
+
+                البرمجة
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="technology">
+
+                التقنية
+
+            </button>
+
+
+            <button class="filter-btn"
+                    data-filter="video">
+
+                الفيديو
+
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     معرض الصور
+================================ -->
+
+<section class="gallery-section">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <!-- الصورة الأولى -->
+
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item ai">
+
+                <div class="gallery-card">
+
+                    <img src="../images/AI.jpg"
+                         alt="الذكاء الاصطناعي"
+                         class="gallery-image">
+
+                    <div class="gallery-info">
+
+                        <i class="fa-solid fa-robot"></i>
+
+                        <h3>
+                            الذكاء الاصطناعي
+                        </h3>
+
+                        <p>
+                            تقنيات الذكاء الاصطناعي
+                            وتطبيقاتها الحديثة.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- الصورة الثانية -->
+
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item programming">
+
+                <div class="gallery-card">
+
+                    <img src="../images/عالم البرمجه.jpg"
+                         alt="البرمجة"
+                         class="gallery-image">
+
+                    <div class="gallery-info">
+
+                        <i class="fa-solid fa-code"></i>
+
+                        <h3>
+                            عالم البرمجة
+                        </h3>
+
+                        <p>
+                            كتابة الأكواد وتطوير
+                            البرامج والتطبيقات.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- الصورة الثالثة -->
+
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item technology">
+
+                <div class="gallery-card">
+
+                    <img src="../images/Network.jpg"
+                         alt="شبكات الحاسوب"
+                         class="gallery-image">
+
+                    <div class="gallery-info">
+
+                        <i class="fa-solid fa-network-wired"></i>
+
+                        <h3>
+                            شبكات الحاسوب
+                        </h3>
+
+                        <p>
+                            الشبكات والاتصالات
+                            ونقل البيانات.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- الصورة الرابعة -->
+
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item technology">
+
+                <div class="gallery-card">
+
+                    <img src="../images/Cloud.jpg"
+                         alt="الحوسبة السحابية"
+                         class="gallery-image">
+
+                    <div class="gallery-info">
+
+                        <i class="fa-solid fa-cloud"></i>
+
+                        <h3>
+                            الحوسبة السحابية
+                        </h3>
+
+                        <p>
+                            الخدمات والأنظمة
+                            المعتمدة على الإنترنت.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- الصورة الخامسة -->
+
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item technology">
+
+                <div class="gallery-card">
+
+                    <img src="../images/IOT.jpg"
+                         alt="إنترنت الأشياء"
+                         class="gallery-image">
+
+                    <div class="gallery-info">
+
+                        <i class="fa-solid fa-wifi"></i>
+
+                        <h3>
+                            إنترنت الأشياء
+                        </h3>
+
+                        <p>
+                            الأجهزة الذكية
+                            المتصلة مع بعضها.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- الصورة السادسة -->
+
+            <div class="col-lg-4 col-md-6 mb-4 gallery-item programming">
+
+                <div class="gallery-card">
+
+                    <img src="../images/Web (1).jpg"
+                         alt="تطوير الويب"
+                         class="gallery-image">
+
+                    <div class="gallery-info">
+
+                        <i class="fa-solid fa-laptop-code"></i>
+
+                        <h3>
+                            تطوير مواقع الويب
+                        </h3>
+
+                        <p>
+                            تصميم وتطوير مواقع
+                            الويب الحديثة.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     قسم الفيديو
+================================ -->
+
+<section class="videos-section">
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <i class="fa-solid fa-video"></i>
+
+            <h2>
+                فيديوهات تقنية قصيرة
+            </h2>
+
+            <p>
+                مقاطع قصيرة مرتبطة بالبرمجة
+                والتكنولوجيا.
+            </p>
+
+        </div>
+
+
+
+        <div class="row">
+
+
+            <!-- الفيديو الأول -->
+
+            <div class="col-md-6 mb-4 gallery-item video">
+
+                <div class="video-card">
+
+                    <video controls
+                           preload="metadata">
+
+                        <source src="../videos/Python - Introduction - W3Schools.com(720P_HD).mp4"
+                                type="video/mp4">
+
+                        متصفحك لا يدعم تشغيل الفيديو.
+
+                    </video>
+
+
+                    <div class="video-info">
+
+                        <h3>
+
+                            <i class="fa-solid fa-code"></i>
+
+                            البرمجة
+
+                        </h3>
+
+                        <p>
+                            فيديو قصير يعرض
+                            بيئة البرمجة وكتابة الأكواد.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- الفيديو الثاني -->
+
+            <div class="col-md-6 mb-4 gallery-item video">
+
+                <div class="video-card">
+
+                    <video controls
+                           preload="metadata">
+
+                        <source src="../videos/Technology _ Does Technology Make Us Happier_(360P).mp4"
+                                type="video/mp4">                             
+
+
+                        متصفحك لا يدعم تشغيل الفيديو.
+
+                    </video>
+
+
+                    <div class="video-info">
+
+                        <h3>
+
+                            <i class="fa-solid fa-microchip"></i>
+
+                            التكنولوجيا الحديثة
+
+                        </h3>
+
+                        <p>
+                            فيديو قصير عن عالم
+                            الحاسوب والتكنولوجيا.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==============================
+     نافذة تكبير الصور
+================================ -->
+
+<div id="imageModal"
+     class="image-modal">
+
+
+    <span class="close-modal">
+
+        &times;
+
+    </span>
+
+
+    <img class="modal-image"
+         id="largeImage"
+         src=""
+         alt="صورة مكبرة">
+
+
+    <p id="modalCaption"></p>
+
+
+</div>
+
+
+
+<!-- ==============================
+     Footer
+================================ -->
+
+<footer>
+
+    <div class="container">
+
+
+        <div class="footer-content">
+
+
+            <div>
+
+                <h3>
+
+                    <i class="fa-solid fa-microchip"></i>
+
+                    عالم التقنية
+
+                </h3>
+
+                <p>
+                    موقع يهتم بالأخبار والمقالات
+                    والوسائط التقنية.
+                </p>
+
+            </div>
+
+
+
+            <div class="footer-links">
+
+                <a href="../index.html">
+                    الرئيسية
+                </a>
+
+                <a href="news.html">
+                    الأخبار
+                </a>
+
+                <a href="articles.html">
+                    المقالات
+                </a>
+
+                <a href="gallery.html">
+                    المعرض
+                </a>
+
+                <a href="contact.html">
+                    تواصل معنا
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <hr>
+
+
+        <p class="copyright">
+
+            جميع الحقوق محفوظة &copy; 2026 عالم التقنية
+
+        </p>
+
+
+    </div>
+
+</footer>
+
+
+
+<!-- ==============================
+     JavaScript
+================================ -->
+
+
+<!-- jQuery -->
+
+<script src="../jquery/jquery.min.js"></script>
+
+
+<!-- Bootstrap -->
+
+<script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+
+
+<!-- JavaScript الخاص بالمعرض -->
+
+<script src="../js/gallery.js"></script>
+
+
+</body>
+
+</html>
